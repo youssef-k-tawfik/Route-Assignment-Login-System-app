@@ -24,7 +24,7 @@ document.getElementById("userName").textContent = loggedInUser.name;
 document.getElementById("logout").addEventListener("click", () => {
   loggedInUser.loggedIn = false;
   updateLocalStorage();
-  location = "Route-Assignment-Login-System-app/index.html";
+  location = "/index.html";
 });
 /*----------------------------------------
   02. Functions
