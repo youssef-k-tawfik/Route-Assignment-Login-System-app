@@ -24,7 +24,7 @@ document.getElementById("userName").textContent = loggedInUser.name;
 document.getElementById("logout").addEventListener("click", () => {
   loggedInUser.loggedIn = false;
   updateLocalStorage();
-  location = "/index.html";
+  location = "./index.html";
 });
 /*----------------------------------------
   02. Functions
