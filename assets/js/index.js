@@ -58,7 +58,7 @@ signInButton.addEventListener("click", () => {
 ----------------------------------------*/
 
 function logIn() {
-  location = "/home.html";
+  location = "./home.html";
 }
 
 let isReporting = false;
