@@ -1,0 +1,165 @@
+/*----------------------------------------
+
+    Project: Login System
+    
+    CSS INDEX
+    ===================
+    00. Global
+    01. Utilities
+    02. 
+    03. 
+    04. 
+
+----------------------------------------*/
+
+/*----------------------------------------
+  00. Global
+----------------------------------------*/
+
+:root {
+  --primary-clr: #000;
+  --secondary-clr: #fff;
+}
+
+html {
+  scroll-padding-top: 3rem;
+}
+
+body {
+  --bs-body-font-family: "PT Sans Caption", sans-serif;
+  background-color: #f7ecde;
+}
+
+/*----------------------------------------
+  01. Utilities
+----------------------------------------*/
+
+/*----------------------------------------
+  02. 
+----------------------------------------*/
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  background-color: #f7f9fc;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container,
+.welcome-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  width: 40%;
+  padding: 10px 0;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ! Sign up */
+
+#success {
+  --y: 2px;
+  position: absolute;
+  visibility: hidden;
+  top: var(--y);
+  user-select: none;
+}
+
+.reporting {
+  animation: showReport 4s;
+}
+
+@keyframes showReport {
+  0% {
+    visibility: visible;
+    opacity: 0;
+    top: var(--y);
+  }
+  30% {
+    opacity: 1;
+    top: calc(var(--y) + 15px);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: calc(var(--y) + 15px);
+    visibility: hidden;
+  }
+}
+
+.input-container {
+  position: relative;
+}
+
+.invalid-report {
+  --y: 80%;
+  position: absolute;
+  left: 0%;
+  top: var(--y);
+  width: fit-content;
+  max-width: 100%;
+  z-index: 1;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+  visibility: hidden;
+  user-select: none;
+}
+.invalid-report::before {
+  content: "";
+  position: absolute;
+  bottom: 99%;
+  left: 20%;
+  transform: translateX(-50%);
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-bottom: 8px solid #dc3545;
+}

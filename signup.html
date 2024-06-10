@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+  <body>
+    <div class="container" id="sign-up-page">
+      <div class="form-container">
+        <h2>Sign Up</h2>
+        <form id="signUpForm">
+          <div class="input-container">
+            <input
+              type="text"
+              id="signupName"
+              placeholder="Name"
+              
+              class="form-control"
+            />
+            <div class="invalid-report">
+              Name must begin with 2 consecutive letters
+            </div>
+          </div>
+          <div class="input-container">
+            <input
+              type="email"
+              id="signupEmail"
+              placeholder="Email"
+              
+              class="form-control"
+            />
+            <div id="invalidEmailReport" class="invalid-report">Invalid Email</div>
+          </div>
+          <div class="input-container">
+            <input
+              type="password"
+              id="signupPassword"
+              placeholder="Password"
+              
+              class="form-control"
+            />
+            <div class="invalid-report">
+              Password must be at least one character
+            </div>
+          </div>
+          <button type="submit" id="signUpButton">Sign Up</button>
+        </form>
+        <p>
+          Already have an account?
+          <a href="/index.html" id="signin-link">Sign In</a>
+        </p>
+      </div>
+    </div>
+
+    <div id="success" class="bg-success text-white p-3 bg-opacity-75 rounded-3">
+      Success!
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/signup.js"></script>
+  </body>
+</html>
